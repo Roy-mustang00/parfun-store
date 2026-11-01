@@ -31,8 +31,11 @@ a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;color:in
 .cart{position:relative;width:54px;height:54px;border-radius:50%;background:#444;border:0;display:grid;place-items:center}
 .badge{position:absolute;top:-4px;right:-4px;min-width:24px;height:24px;border-radius:12px;background:#fff;color:#111;font-size:13px;font-weight:600;display:grid;place-items:center}
 /* hero */
-.hero{position:relative;margin-top:-62px;padding:150px 5vw 110px;min-height:760px;display:flex;flex-direction:column;align-items:center;text-align:center;overflow:hidden;background:linear-gradient(180deg,rgba(18,18,18,.5) 0%,rgba(18,18,18,.3) 45%,rgba(18,18,18,.92) 100%),url("hero.webp") center/cover no-repeat}
-.hero::before{content:none;position:absolute;left:12%;bottom:-120px;width:420px;height:420px;border:14px solid rgba(212,175,55,.16);border-radius:50%;display:grid;place-items:center;font:600 190px 'Montserrat',serif;color:rgba(212,175,55,.16)}
+.hero{position:relative;margin-top:-62px;padding:150px 5vw 110px;min-height:760px;display:flex;flex-direction:column;align-items:center;text-align:center;overflow:hidden;background:
+linear-gradient(180deg,rgba(18,18,18,.55) 0%,rgba(18,18,18,.25) 45%,rgba(18,18,18,.92) 100%),
+repeating-linear-gradient(8deg,rgba(255,255,255,.03) 0 2px,transparent 2px 9px),
+linear-gradient(180deg,#3b1014 0%,#3b1014 38%,#6b5645 38%,#5a4739 100%)}
+.hero::before{content:"PF";position:absolute;left:12%;bottom:-120px;width:420px;height:420px;border:14px solid rgba(212,175,55,.16);border-radius:50%;display:grid;place-items:center;font:600 190px 'Montserrat',serif;color:rgba(212,175,55,.16)}
 .hero>*{position:relative}
 .hero h1{margin:40px 0 18px;font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(40px,10vw,96px);line-height:1.1;background:linear-gradient(#fff1b3,#d4af37 55%,#9a7a1c);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 6px 10px rgba(0,0,0,.6))}
 .sub{font-family:'Cairo',sans-serif;font-weight:600;font-size:clamp(22px,3vw,32px);background:rgba(40,25,25,.85);border:1px solid rgba(255,255,255,.1);border-radius:40px;padding:10px 48px;margin-bottom:44px}
