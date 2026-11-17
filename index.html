@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- PAR'FUN catalogue 2026-11-17: 70 real perfumes (72-list, 2 duplicates share one image). Prices 100/150 DH are PLACEHOLDERS — owner must supply real prices. Previous 26 imaginary products + LE PRESTIGE removed; original file kept at ~/workspace/parfun-site/index.html -->
 <html lang="fr">
 <head>
 <meta charset="utf-8">
@@ -98,7 +99,7 @@ footer{padding:48px 5vw;color:var(--muted);text-align:center;font-size:14px;bord
 
 <div class="navwrap"><div class="nav">
 <svg width="44" height="44" viewBox="0 0 44 44" role="img" aria-label="Par’Fun"><circle cx="22" cy="17" r="11" fill="none" stroke="#e2dc84"/><text x="22" y="22" text-anchor="middle" font-family="Montserrat,sans-serif" font-weight="300" font-size="14" fill="#e2dc84">PF</text><text x="22" y="40" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="9" fill="#e2dc84">Par’Fun</text></svg>
-<nav aria-label="Catégories"><a href="#hommes">HOMMES</a><a href="#femmes">FEMMES</a><a href="#niche">NICHE</a><a href="#packs">PACKS</a><a href="#fun">COLLECTION FUN</a></nav>
+<nav aria-label="Catégories"><a href="#creed">CREED</a><a href="#parfums-de-marly">MARLY</a><a href="#maison-francis-kurkdjian">MFK</a><a href="#initio">INITIO</a><a href="#xerjoff">XERJOFF</a><a href="#tom-ford">TOM FORD</a><a href="#roja">ROJA</a><a href="#sospiro">SOSPIRO</a></nav>
 <button class="cart" id="open" aria-label="Ouvrir le panier"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M6 8h12l1 13H5zM9 8a3 3 0 0 1 6 0" stroke="#fff" stroke-width="1.5"/></svg><span class="badge" id="count">0</span></button>
 </div></div>
 
@@ -107,374 +108,987 @@ footer{padding:48px 5vw;color:var(--muted);text-align:center;font-size:14px;bord
 <h1 lang="ar">أنت اختار</h1>
 <div class="sub" lang="ar">والجودة علينا</div>
 <form class="search" role="search" onsubmit="return false"><input id="q" class="" type="search" placeholder="Rechercher un parfum…" aria-label="Rechercher un parfum"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5" fill="none" stroke="#b9aea2" stroke-width="2.4"/><path d="M15 15l6 6" stroke="#b9aea2" stroke-width="2.4" stroke-linecap="round"/></svg></form>
-<div class="pills"><a class="pill" href="#hommes">HOMME</a><a class="pill" href="#femmes">FEMME</a><a class="pill" href="#niche">NICHE</a><a class="pill" href="#packs">PACKS</a><a class="pill" href="#fun">COLLECTION FUN</a></div>
+<div class="pills"><a class="pill" href="#creed">CREED</a><a class="pill" href="#parfums-de-marly">MARLY</a><a class="pill" href="#maison-francis-kurkdjian">MFK</a><a class="pill" href="#initio">INITIO</a><a class="pill" href="#xerjoff">XERJOFF</a><a class="pill" href="#tom-ford">TOM FORD</a><a class="pill" href="#roja">ROJA</a><a class="pill" href="#sospiro">SOSPIRO</a></div>
 </section>
 
-<!-- HOMMES -->
-<section class="sec" id="hommes">
+<!-- CREED -->
+<section class="sec" id="creed">
 <div class="sec-header">
-  <h2>HOMMES</h2>
+  <h2>CREED</h2>
 </div>
-<div class="grid" id="grid-hommes">
-<article class="card" data-name="parfun le prestige">
+<div class="grid" id="grid-creed">
+<article class="card" data-name="creed-aventus">
   <div class="bottle">
-    <img src="https://i.postimg.cc/9MhfpGDV/Whats-App-Image-2026-10-25-at-12-13-16.jpg" alt="Par'Fun LE PRESTIGE">
+    <img src="p01-creed-aventus.webp" alt="Creed Aventus" loading="lazy">
   </div>
-  <h3>Par'Fun LE PRESTIGE</h3>
-  <label style="margin:0">Taille</label>
-  <select class="perfume-size">
-    <option value="50">50 ml — 100 DH</option>
-    <option value="100">100 ml — 180 DH</option>
-  </select>
-  <button class="btn" onclick="addCardToCart(this, 'Par\'Fun LE PRESTIGE', {50:100,100:180})">Ajouter au panier</button>
-</article>
-<article class="card" data-name="sauvage">
-  <div class="bottle">
-    <img src="b1.jpg" alt="Sauvage">
-  </div>
-  <h3>Sauvage</h3>
-  <label style="margin:0">Taille</label>
-  <select class="perfume-size">
-    <option value="50">50 ml — 70 DH</option>
-    <option value="100">100 ml — 120 DH</option>
-  </select>
-  <button class="btn" onclick="addCardToCart(this, 'Sauvage', {50:70,100:120})">Ajouter au panier</button>
-</article>
-<article class="card" data-name="aventus royal">
-  <div class="bottle">
-    <img src="b5.jpg" alt="Aventus Royal">
-  </div>
-  <h3>Aventus Royal</h3>
+  <h3>Creed Aventus</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Creed</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
     <option value="50">50 ml — 100 DH</option>
     <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Aventus Royal', {50:100,100:150})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Creed Aventus', {50:100,100:150})">Ajouter au panier</button>
 </article>
-<article class="card" data-name="bleu impérial">
+<article class="card" data-name="creed-absolu-aventus">
   <div class="bottle">
-    <img src="b7.jpg" alt="Bleu Impérial">
+    <img src="p02-creed-absolu-aventus.webp" alt="Creed Absolu Aventus" loading="lazy">
   </div>
-  <h3>Bleu Impérial</h3>
-  <label style="margin:0">Taille</label>
-  <select class="perfume-size">
-    <option value="50">50 ml — 70 DH</option>
-    <option value="100">100 ml — 120 DH</option>
-  </select>
-  <button class="btn" onclick="addCardToCart(this, 'Bleu Impérial', {50:70,100:120})">Ajouter au panier</button>
-</article>
-<article class="card" data-name="noir absolu">
-  <div class="bottle">
-    <img src="b4.jpg" alt="Noir Absolu">
-  </div>
-  <h3>Noir Absolu</h3>
-  <label style="margin:0">Taille</label>
-  <select class="perfume-size">
-    <option value="50">50 ml — 70 DH</option>
-    <option value="100">100 ml — 120 DH</option>
-  </select>
-  <button class="btn" onclick="addCardToCart(this, 'Noir Absolu', {50:70,100:120})">Ajouter au panier</button>
-</article>
-<article class="card" data-name="ambre du soir">
-  <div class="bottle">
-    <img src="b6.jpg" alt="Ambre du Soir">
-  </div>
-  <h3>Ambre du Soir</h3>
+  <h3>Creed Absolu Aventus</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Creed</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
     <option value="50">50 ml — 100 DH</option>
     <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Ambre du Soir', {50:100,100:150})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Creed Absolu Aventus', {50:100,100:150})">Ajouter au panier</button>
 </article>
-<article class="card" data-name="santal fumé">
+<article class="card" data-name="creed-silver-mountain-water">
   <div class="bottle">
-    <img src="b3.jpg" alt="Santal Fumé">
+    <img src="p03-creed-silver-mountain-water.webp" alt="Creed Silver Mountain Water" loading="lazy">
   </div>
-  <h3>Santal Fumé</h3>
-  <label style="margin:0">Taille</label>
-  <select class="perfume-size">
-    <option value="50">50 ml — 70 DH</option>
-    <option value="100">100 ml — 120 DH</option>
-  </select>
-  <button class="btn" onclick="addCardToCart(this, 'Santal Fumé', {50:70,100:120})">Ajouter au panier</button>
-</article>
-</div>
-</section>
-
-<!-- FEMMES -->
-<section class="sec" id="femmes">
-<div class="sec-header">
-  <h2>FEMMES</h2>
-</div>
-<div class="grid" id="grid-femmes">
-<article class="card" data-name="jasmin doré">
-  <div class="bottle">
-    <img src="b2.jpg" alt="Jasmin Doré">
-  </div>
-  <h3>Jasmin Doré</h3>
-  <label style="margin:0">Taille</label>
-  <select class="perfume-size">
-    <option value="50">50 ml — 70 DH</option>
-    <option value="100">100 ml — 120 DH</option>
-  </select>
-  <button class="btn" onclick="addCardToCart(this, 'Jasmin Doré', {50:70,100:120})">Ajouter au panier</button>
-</article>
-<article class="card" data-name="rose velours">
-  <div class="bottle">
-    <img src="b6.jpg" alt="Rose Velours">
-  </div>
-  <h3>Rose Velours</h3>
-  <label style="margin:0">Taille</label>
-  <select class="perfume-size">
-    <option value="50">50 ml — 70 DH</option>
-    <option value="100">100 ml — 120 DH</option>
-  </select>
-  <button class="btn" onclick="addCardToCart(this, 'Rose Velours', {50:70,100:120})">Ajouter au panier</button>
-</article>
-<article class="card" data-name="fleur de lune">
-  <div class="bottle">
-    <img src="b7.jpg" alt="Fleur de Lune">
-  </div>
-  <h3>Fleur de Lune</h3>
+  <h3>Creed Silver Mountain Water</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Creed</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
     <option value="50">50 ml — 100 DH</option>
     <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Fleur de Lune', {50:100,100:150})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Creed Silver Mountain Water', {50:100,100:150})">Ajouter au panier</button>
 </article>
-<article class="card" data-name="vanille bourbon">
+<article class="card" data-name="creed-virgin-island-water">
   <div class="bottle">
-    <img src="b1.jpg" alt="Vanille Bourbon">
+    <img src="p04-creed-virgin-island-water.webp" alt="Creed Virgin Island Water" loading="lazy">
   </div>
-  <h3>Vanille Bourbon</h3>
+  <h3>Creed Virgin Island Water</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Creed</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
     <option value="50">50 ml — 100 DH</option>
     <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Vanille Bourbon', {50:100,100:150})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Creed Virgin Island Water', {50:100,100:150})">Ajouter au panier</button>
 </article>
-<article class="card" data-name="musc précieux">
+<article class="card" data-name="creed-centaurus">
   <div class="bottle">
-    <img src="b4.jpg" alt="Musc Précieux">
+    <img src="p05-creed-centaurus.webp" alt="Creed Centaurus" loading="lazy">
   </div>
-  <h3>Musc Précieux</h3>
-  <label style="margin:0">Taille</label>
-  <select class="perfume-size">
-    <option value="50">50 ml — 70 DH</option>
-    <option value="100">100 ml — 120 DH</option>
-  </select>
-  <button class="btn" onclick="addCardToCart(this, 'Musc Précieux', {50:70,100:120})">Ajouter au panier</button>
-</article>
-<article class="card" data-name="nuit de safran">
-  <div class="bottle">
-    <img src="b5.jpg" alt="Nuit de Safran">
-  </div>
-  <h3>Nuit de Safran</h3>
+  <h3>Creed Centaurus</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Creed</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
     <option value="50">50 ml — 100 DH</option>
     <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Nuit de Safran', {50:100,100:150})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Creed Centaurus', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="creed-oud-zarian">
+  <div class="bottle">
+    <img src="p06-creed-oud-zarian.webp" alt="Creed Oud Zarian" loading="lazy">
+  </div>
+  <h3>Creed Oud Zarian</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Creed</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Creed Oud Zarian', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="creed-himalaya">
+  <div class="bottle">
+    <img src="p07-creed-himalaya.webp" alt="Creed Himalaya" loading="lazy">
+  </div>
+  <h3>Creed Himalaya</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Creed</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Creed Himalaya', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="creed-millesime-imperial">
+  <div class="bottle">
+    <img src="p08-creed-millesime-imperial.webp" alt="Creed Millésime Impérial" loading="lazy">
+  </div>
+  <h3>Creed Millésime Impérial</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Creed</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Creed Millésime Impérial', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="creed-green-irish-tweed">
+  <div class="bottle">
+    <img src="p09-creed-green-irish-tweed.webp" alt="Creed Green Irish Tweed" loading="lazy">
+  </div>
+  <h3>Creed Green Irish Tweed</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Creed</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Creed Green Irish Tweed', {50:100,100:150})">Ajouter au panier</button>
 </article>
 </div>
 </section>
 
-<!-- NICHE -->
-<section class="sec" id="niche">
+<!-- PARFUMS DE MARLY -->
+<section class="sec" id="parfums-de-marly">
 <div class="sec-header">
-  <h2>NICHE</h2>
+  <h2>PARFUMS DE MARLY</h2>
 </div>
-<div class="grid" id="grid-niche">
-<article class="card" data-name="oud royal">
+<div class="grid" id="grid-parfums-de-marly">
+<article class="card" data-name="parfums-de-marly-layton">
   <div class="bottle">
-    <img src="b3.jpg" alt="Oud Royal">
+    <img src="p10-parfums-de-marly-layton.webp" alt="Parfums de Marly Layton" loading="lazy">
   </div>
-  <h3>Oud Royal</h3>
+  <h3>Parfums de Marly Layton</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Parfums de Marly</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
     <option value="50">50 ml — 100 DH</option>
     <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Oud Royal', {50:100,100:150})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Parfums de Marly Layton', {50:100,100:150})">Ajouter au panier</button>
 </article>
-<article class="card" data-name="cuir sauvage">
+<article class="card" data-name="parfums-de-marly-greenly">
   <div class="bottle">
-    <img src="b5.jpg" alt="Cuir Sauvage">
+    <img src="p11-parfums-de-marly-greenly.webp" alt="Parfums de Marly Greenly" loading="lazy">
   </div>
-  <h3>Cuir Sauvage</h3>
+  <h3>Parfums de Marly Greenly</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Parfums de Marly</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
     <option value="50">50 ml — 100 DH</option>
     <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Cuir Sauvage', {50:100,100:150})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Parfums de Marly Greenly', {50:100,100:150})">Ajouter au panier</button>
 </article>
-<article class="card" data-name="safran noir">
+<article class="card" data-name="parfums-de-marly-percival">
   <div class="bottle">
-    <img src="b4.jpg" alt="Safran Noir">
+    <img src="p12-parfums-de-marly-percival.webp" alt="Parfums de Marly Percival" loading="lazy">
   </div>
-  <h3>Safran Noir</h3>
+  <h3>Parfums de Marly Percival</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Parfums de Marly</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
     <option value="50">50 ml — 100 DH</option>
     <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Safran Noir', {50:100,100:150})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Parfums de Marly Percival', {50:100,100:150})">Ajouter au panier</button>
 </article>
-<article class="card" data-name="encens royal">
+<article class="card" data-name="parfums-de-marly-pegasus">
   <div class="bottle">
-    <img src="b6.jpg" alt="Encens Royal">
+    <img src="p13-parfums-de-marly-pegasus.webp" alt="Parfums de Marly Pegasus" loading="lazy">
   </div>
-  <h3>Encens Royal</h3>
+  <h3>Parfums de Marly Pegasus</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Parfums de Marly</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
     <option value="50">50 ml — 100 DH</option>
     <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Encens Royal', {50:100,100:150})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Parfums de Marly Pegasus', {50:100,100:150})">Ajouter au panier</button>
 </article>
-<article class="card" data-name="iris impérial">
+<article class="card" data-name="parfums-de-marly-sedley">
   <div class="bottle">
-    <img src="b7.jpg" alt="Iris Impérial">
+    <img src="p14-parfums-de-marly-sedley.webp" alt="Parfums de Marly Sedley" loading="lazy">
   </div>
-  <h3>Iris Impérial</h3>
+  <h3>Parfums de Marly Sedley</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Parfums de Marly</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
     <option value="50">50 ml — 100 DH</option>
     <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Iris Impérial', {50:100,100:150})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Parfums de Marly Sedley', {50:100,100:150})">Ajouter au panier</button>
 </article>
-<article class="card" data-name="santal mystique">
+<article class="card" data-name="parfums-de-marly-althair">
   <div class="bottle">
-    <img src="b1.jpg" alt="Santal Mystique">
+    <img src="p15-parfums-de-marly-althair.webp" alt="Parfums de Marly Althaïr" loading="lazy">
   </div>
-  <h3>Santal Mystique</h3>
+  <h3>Parfums de Marly Althaïr</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Parfums de Marly</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
     <option value="50">50 ml — 100 DH</option>
     <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Santal Mystique', {50:100,100:150})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Parfums de Marly Althaïr', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="parfums-de-marly-castley">
+  <div class="bottle">
+    <img src="p16-parfums-de-marly-castley.webp" alt="Parfums de Marly Castley" loading="lazy">
+  </div>
+  <h3>Parfums de Marly Castley</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Parfums de Marly</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Parfums de Marly Castley', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="parfums-de-marly-cassili">
+  <div class="bottle">
+    <img src="p17-parfums-de-marly-cassili.webp" alt="Parfums de Marly Cassili" loading="lazy">
+  </div>
+  <h3>Parfums de Marly Cassili</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Parfums de Marly</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Parfums de Marly Cassili', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="parfums-de-marly-kalan">
+  <div class="bottle">
+    <img src="p18-parfums-de-marly-kalan.webp" alt="Parfums de Marly Kalan" loading="lazy">
+  </div>
+  <h3>Parfums de Marly Kalan</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Parfums de Marly</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Parfums de Marly Kalan', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="parfums-de-marly-carlisle">
+  <div class="bottle">
+    <img src="p19-parfums-de-marly-carlisle.webp" alt="Parfums de Marly Carlisle" loading="lazy">
+  </div>
+  <h3>Parfums de Marly Carlisle</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Parfums de Marly</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Parfums de Marly Carlisle', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="parfums-de-marly-haltane">
+  <div class="bottle">
+    <img src="p20-parfums-de-marly-haltane.webp" alt="Parfums de Marly Haltane" loading="lazy">
+  </div>
+  <h3>Parfums de Marly Haltane</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Parfums de Marly</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Parfums de Marly Haltane', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="parfums-de-marly-herod">
+  <div class="bottle">
+    <img src="p21-parfums-de-marly-herod.webp" alt="Parfums de Marly Herod" loading="lazy">
+  </div>
+  <h3>Parfums de Marly Herod</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Parfums de Marly</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Parfums de Marly Herod', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="parfums-de-marly-carios">
+  <div class="bottle">
+    <img src="p22-parfums-de-marly-carios.webp" alt="Parfums de Marly Carios" loading="lazy">
+  </div>
+  <h3>Parfums de Marly Carios</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Parfums de Marly</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Parfums de Marly Carios', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="parfums-de-marly-eragon">
+  <div class="bottle">
+    <img src="p23-parfums-de-marly-eragon.webp" alt="Parfums de Marly Eragon" loading="lazy">
+  </div>
+  <h3>Parfums de Marly Eragon</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Parfums de Marly</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Parfums de Marly Eragon', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="parfums-de-marly-valero">
+  <div class="bottle">
+    <img src="p24-parfums-de-marly-valero.webp" alt="Parfums de Marly Valero" loading="lazy">
+  </div>
+  <h3>Parfums de Marly Valero</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Parfums de Marly</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Parfums de Marly Valero', {50:100,100:150})">Ajouter au panier</button>
 </article>
 </div>
 </section>
 
-<!-- PACKS -->
-<section class="sec" id="packs">
+<!-- MAISON FRANCIS KURKDJIAN -->
+<section class="sec" id="maison-francis-kurkdjian">
 <div class="sec-header">
-  <h2>PACKS</h2>
+  <h2>MAISON FRANCIS KURKDJIAN</h2>
 </div>
-<div class="grid" id="grid-packs">
-<article class="card" data-name="pack découverte homme">
+<div class="grid" id="grid-maison-francis-kurkdjian">
+<article class="card" data-name="maison-francis-kurkdjian-grand-soir">
   <div class="bottle">
-    <img src="b1.jpg" alt="Pack Découverte Homme">
+    <img src="p25-maison-francis-kurkdjian-grand-soir.webp" alt="Maison Francis Kurkdjian Grand Soir" loading="lazy">
   </div>
-  <h3>Pack Découverte Homme</h3>
+  <h3>Maison Francis Kurkdjian Grand Soir</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Maison Francis Kurkdjian</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
-    <option value="50">2 x 50 ml — 199 DH</option>
-    <option value="100">2 x 100 ml — 349 DH</option>
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Pack Découverte Homme', {50:199,100:349})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Maison Francis Kurkdjian Grand Soir', {50:100,100:150})">Ajouter au panier</button>
 </article>
-<article class="card" data-name="pack découverte femme">
+<article class="card" data-name="maison-francis-kurkdjian-baccarat-rouge-540">
   <div class="bottle">
-    <img src="b2.jpg" alt="Pack Découverte Femme">
+    <img src="p26-maison-francis-kurkdjian-baccarat-rouge-540.webp" alt="Maison Francis Kurkdjian Baccarat Rouge 540" loading="lazy">
   </div>
-  <h3>Pack Découverte Femme</h3>
+  <h3>Maison Francis Kurkdjian Baccarat Rouge 540</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Maison Francis Kurkdjian</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
-    <option value="50">2 x 50 ml — 199 DH</option>
-    <option value="100">2 x 100 ml — 349 DH</option>
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Pack Découverte Femme', {50:199,100:349})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Maison Francis Kurkdjian Baccarat Rouge 540', {50:100,100:150})">Ajouter au panier</button>
 </article>
-<article class="card" data-name="pack duo prestige">
+<article class="card" data-name="maison-francis-kurkdjian-oud-satin-mood">
   <div class="bottle">
-    <img src="b3.jpg" alt="Pack Duo Prestige">
+    <img src="p27-maison-francis-kurkdjian-oud-satin-mood.webp" alt="Maison Francis Kurkdjian Oud Satin Mood" loading="lazy">
   </div>
-  <h3>Pack Duo Prestige</h3>
+  <h3>Maison Francis Kurkdjian Oud Satin Mood</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Maison Francis Kurkdjian</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
-    <option value="50">2 x 50 ml — 299 DH</option>
-    <option value="100">2 x 100 ml — 449 DH</option>
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Pack Duo Prestige', {50:299,100:449})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Maison Francis Kurkdjian Oud Satin Mood', {50:100,100:150})">Ajouter au panier</button>
 </article>
-<article class="card" data-name="pack oud et rose">
+<article class="card" data-name="maison-francis-kurkdjian-724">
   <div class="bottle">
-    <img src="b6.jpg" alt="Pack Oud et Rose">
+    <img src="p28-maison-francis-kurkdjian-724.webp" alt="Maison Francis Kurkdjian 724" loading="lazy">
   </div>
-  <h3>Pack Oud et Rose</h3>
+  <h3>Maison Francis Kurkdjian 724</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Maison Francis Kurkdjian</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
-    <option value="50">2 x 50 ml — 249 DH</option>
-    <option value="100">2 x 100 ml — 399 DH</option>
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Pack Oud et Rose', {50:249,100:399})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Maison Francis Kurkdjian 724', {50:100,100:150})">Ajouter au panier</button>
 </article>
 </div>
 </section>
 
-<!-- FUN -->
-<section class="sec" id="fun">
+<!-- INITIO -->
+<section class="sec" id="initio">
 <div class="sec-header">
-  <h2>COLLECTION FUN</h2>
+  <h2>INITIO</h2>
 </div>
-<div class="grid" id="grid-fun">
-<article class="card" data-name="citron glacé">
+<div class="grid" id="grid-initio">
+<article class="card" data-name="initio-paragon">
   <div class="bottle">
-    <img src="b7.jpg" alt="Citron Glacé">
+    <img src="p29-initio-paragon.webp" alt="Initio Paragon" loading="lazy">
   </div>
-  <h3>Citron Glacé</h3>
+  <h3>Initio Paragon</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Initio</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
-    <option value="50">50 ml — 70 DH</option>
-    <option value="100">100 ml — 120 DH</option>
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Citron Glacé', {50:70,100:120})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Initio Paragon', {50:100,100:150})">Ajouter au panier</button>
 </article>
-<article class="card" data-name="bubble gum">
+<article class="card" data-name="initio-narcotic-delight">
   <div class="bottle">
-    <img src="b2.jpg" alt="Bubble Gum">
+    <img src="p30-initio-narcotic-delight.webp" alt="Initio Narcotic Delight" loading="lazy">
   </div>
-  <h3>Bubble Gum</h3>
+  <h3>Initio Narcotic Delight</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Initio</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
-    <option value="50">50 ml — 70 DH</option>
-    <option value="100">100 ml — 120 DH</option>
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Bubble Gum', {50:70,100:120})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Initio Narcotic Delight', {50:100,100:150})">Ajouter au panier</button>
 </article>
-<article class="card" data-name="fruits rouges">
+<article class="card" data-name="initio-side-effect">
   <div class="bottle">
-    <img src="b6.jpg" alt="Fruits Rouges">
+    <img src="p31-initio-side-effect.webp" alt="Initio Side Effect" loading="lazy">
   </div>
-  <h3>Fruits Rouges</h3>
+  <h3>Initio Side Effect</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Initio</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
-    <option value="50">50 ml — 70 DH</option>
-    <option value="100">100 ml — 120 DH</option>
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Fruits Rouges', {50:70,100:120})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Initio Side Effect', {50:100,100:150})">Ajouter au panier</button>
 </article>
-<article class="card" data-name="cola vanille">
+<article class="card" data-name="initio-psychedelic-love">
   <div class="bottle">
-    <img src="b1.jpg" alt="Cola Vanille">
+    <img src="p32-initio-psychedelic-love.webp" alt="Initio Psychedelic Love" loading="lazy">
   </div>
-  <h3>Cola Vanille</h3>
+  <h3>Initio Psychedelic Love</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Initio</p>
   <label style="margin:0">Taille</label>
   <select class="perfume-size">
-    <option value="50">50 ml — 70 DH</option>
-    <option value="100">100 ml — 120 DH</option>
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
   </select>
-  <button class="btn" onclick="addCardToCart(this, 'Cola Vanille', {50:70,100:120})">Ajouter au panier</button>
+  <button class="btn" onclick="addCardToCart(this, 'Initio Psychedelic Love', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="initio-oud-for-greatness">
+  <div class="bottle">
+    <img src="p33-initio-oud-for-greatness.webp" alt="Initio Oud for Greatness" loading="lazy">
+  </div>
+  <h3>Initio Oud for Greatness</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Initio</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Initio Oud for Greatness', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="initio-absolute-aphrodisiac">
+  <div class="bottle">
+    <img src="p34-initio-absolute-aphrodisiac.webp" alt="Initio Absolute Aphrodisiac" loading="lazy">
+  </div>
+  <h3>Initio Absolute Aphrodisiac</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Initio</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Initio Absolute Aphrodisiac', {50:100,100:150})">Ajouter au panier</button>
+</article>
+</div>
+</section>
+
+<!-- XERJOFF -->
+<section class="sec" id="xerjoff">
+<div class="sec-header">
+  <h2>XERJOFF</h2>
+</div>
+<div class="grid" id="grid-xerjoff">
+<article class="card" data-name="xerjoff-torino-21">
+  <div class="bottle">
+    <img src="p35-xerjoff-torino-21.webp" alt="Xerjoff Torino 21" loading="lazy">
+  </div>
+  <h3>Xerjoff Torino 21</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Xerjoff</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Xerjoff Torino 21', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="xerjoff-torino-22">
+  <div class="bottle">
+    <img src="p36-xerjoff-torino-22.webp" alt="Xerjoff Torino 22" loading="lazy">
+  </div>
+  <h3>Xerjoff Torino 22</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Xerjoff</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Xerjoff Torino 22', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="xerjoff-torino-23">
+  <div class="bottle">
+    <img src="p37-xerjoff-torino-23.webp" alt="Xerjoff Torino 23" loading="lazy">
+  </div>
+  <h3>Xerjoff Torino 23</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Xerjoff</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Xerjoff Torino 23', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="xerjoff-torino-24">
+  <div class="bottle">
+    <img src="p38-xerjoff-torino-24.webp" alt="Xerjoff Torino 24" loading="lazy">
+  </div>
+  <h3>Xerjoff Torino 24</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Xerjoff</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Xerjoff Torino 24', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="xerjoff-naxos">
+  <div class="bottle">
+    <img src="p39-xerjoff-naxos.webp" alt="Xerjoff Naxos" loading="lazy">
+  </div>
+  <h3>Xerjoff Naxos</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Xerjoff</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Xerjoff Naxos', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="xerjoff-40-knots">
+  <div class="bottle">
+    <img src="p40-xerjoff-40-knots.webp" alt="Xerjoff 40 Knots" loading="lazy">
+  </div>
+  <h3>Xerjoff 40 Knots</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Xerjoff</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Xerjoff 40 Knots', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="xerjoff-alexandria-ii">
+  <div class="bottle">
+    <img src="p41-xerjoff-alexandria-ii.webp" alt="Xerjoff Alexandria II" loading="lazy">
+  </div>
+  <h3>Xerjoff Alexandria II</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Xerjoff</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Xerjoff Alexandria II', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="xerjoff-white-on-white">
+  <div class="bottle">
+    <img src="p42-xerjoff-white-on-white.webp" alt="Xerjoff White on White" loading="lazy">
+  </div>
+  <h3>Xerjoff White on White</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Xerjoff</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Xerjoff White on White', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="xerjoff-erba-pura">
+  <div class="bottle">
+    <img src="p43-xerjoff-erba-pura.webp" alt="Xerjoff Erba Pura" loading="lazy">
+  </div>
+  <h3>Xerjoff Erba Pura</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Xerjoff</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Xerjoff Erba Pura', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="xerjoff-erba-gold">
+  <div class="bottle">
+    <img src="p44-xerjoff-erba-gold.webp" alt="Xerjoff Erba Gold" loading="lazy">
+  </div>
+  <h3>Xerjoff Erba Gold</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Xerjoff</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Xerjoff Erba Gold', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="xerjoff-renaissance">
+  <div class="bottle">
+    <img src="p45-xerjoff-renaissance.webp" alt="Xerjoff Renaissance" loading="lazy">
+  </div>
+  <h3>Xerjoff Renaissance</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Xerjoff</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Xerjoff Renaissance', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="xerjoff-more-than-words">
+  <div class="bottle">
+    <img src="p46-xerjoff-more-than-words.webp" alt="Xerjoff More Than Words" loading="lazy">
+  </div>
+  <h3>Xerjoff More Than Words</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Xerjoff</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Xerjoff More Than Words', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="xerjoff-duran-duran-orange-neorio">
+  <div class="bottle">
+    <img src="p47-xerjoff-duran-duran-orange-neorio.webp" alt="Xerjoff Duran Duran Orange Neorio" loading="lazy">
+  </div>
+  <h3>Xerjoff Duran Duran Orange Neorio</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Xerjoff</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Xerjoff Duran Duran Orange Neorio', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="xerjoff-mefisto">
+  <div class="bottle">
+    <img src="p48-xerjoff-mefisto.webp" alt="Xerjoff Mefisto" loading="lazy">
+  </div>
+  <h3>Xerjoff Mefisto</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Xerjoff</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Xerjoff Mefisto', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="xerjoff-golden-moka">
+  <div class="bottle">
+    <img src="p49-xerjoff-golden-moka.webp" alt="Xerjoff Golden Moka" loading="lazy">
+  </div>
+  <h3>Xerjoff Golden Moka</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Xerjoff</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Xerjoff Golden Moka', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="xerjoff-richwood">
+  <div class="bottle">
+    <img src="p50-xerjoff-richwood.webp" alt="Xerjoff Richwood" loading="lazy">
+  </div>
+  <h3>Xerjoff Richwood</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Xerjoff</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Xerjoff Richwood', {50:100,100:150})">Ajouter au panier</button>
+</article>
+</div>
+</section>
+
+<!-- TOM FORD -->
+<section class="sec" id="tom-ford">
+<div class="sec-header">
+  <h2>TOM FORD</h2>
+</div>
+<div class="grid" id="grid-tom-ford">
+<article class="card" data-name="tom-ford-soleil-blanc">
+  <div class="bottle">
+    <img src="p51-tom-ford-soleil-blanc.webp" alt="Tom Ford Soleil Blanc" loading="lazy">
+  </div>
+  <h3>Tom Ford Soleil Blanc</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Tom Ford</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Tom Ford Soleil Blanc', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="tom-ford-bitter-peach">
+  <div class="bottle">
+    <img src="p52-tom-ford-bitter-peach.webp" alt="Tom Ford Bitter Peach" loading="lazy">
+  </div>
+  <h3>Tom Ford Bitter Peach</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Tom Ford</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Tom Ford Bitter Peach', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="tom-ford-oud-minerale">
+  <div class="bottle">
+    <img src="p53-tom-ford-oud-minerale.webp" alt="Tom Ford Oud Minérale" loading="lazy">
+  </div>
+  <h3>Tom Ford Oud Minérale</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Tom Ford</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Tom Ford Oud Minérale', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="tom-ford-vanilla-sex">
+  <div class="bottle">
+    <img src="p54-tom-ford-vanilla-sex.webp" alt="Tom Ford Vanilla Sex" loading="lazy">
+  </div>
+  <h3>Tom Ford Vanilla Sex</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Tom Ford</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Tom Ford Vanilla Sex', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="tom-ford-ombre-leather">
+  <div class="bottle">
+    <img src="p55-tom-ford-ombre-leather.webp" alt="Tom Ford Ombre Leather" loading="lazy">
+  </div>
+  <h3>Tom Ford Ombre Leather</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Tom Ford</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Tom Ford Ombre Leather', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="tom-ford-oud-wood">
+  <div class="bottle">
+    <img src="p56-tom-ford-oud-wood.webp" alt="Tom Ford Oud Wood" loading="lazy">
+  </div>
+  <h3>Tom Ford Oud Wood</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Tom Ford</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Tom Ford Oud Wood', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="tom-ford-black-orchid">
+  <div class="bottle">
+    <img src="p57-tom-ford-black-orchid.webp" alt="Tom Ford Black Orchid" loading="lazy">
+  </div>
+  <h3>Tom Ford Black Orchid</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Tom Ford</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Tom Ford Black Orchid', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="tom-ford-ebene-fume">
+  <div class="bottle">
+    <img src="p58-tom-ford-ebene-fume.webp" alt="Tom Ford Ébène Fumé" loading="lazy">
+  </div>
+  <h3>Tom Ford Ébène Fumé</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Tom Ford</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Tom Ford Ébène Fumé', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="tom-ford-noir-extreme">
+  <div class="bottle">
+    <img src="p59-tom-ford-noir-extreme.webp" alt="Tom Ford Noir Extrême" loading="lazy">
+  </div>
+  <h3>Tom Ford Noir Extrême</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Tom Ford</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Tom Ford Noir Extrême', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="tom-ford-grey-vetiver">
+  <div class="bottle">
+    <img src="p60-tom-ford-grey-vetiver.webp" alt="Tom Ford Grey Vetiver" loading="lazy">
+  </div>
+  <h3>Tom Ford Grey Vetiver</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Tom Ford</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Tom Ford Grey Vetiver', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="tom-ford-tobacco-vanille">
+  <div class="bottle">
+    <img src="p61-tom-ford-tobacco-vanille.webp" alt="Tom Ford Tobacco Vanille" loading="lazy">
+  </div>
+  <h3>Tom Ford Tobacco Vanille</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Tom Ford</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Tom Ford Tobacco Vanille', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="tom-ford-bois-marocain">
+  <div class="bottle">
+    <img src="p62-tom-ford-bois-marocain.webp" alt="Tom Ford Bois Marocain" loading="lazy">
+  </div>
+  <h3>Tom Ford Bois Marocain</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Tom Ford</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Tom Ford Bois Marocain', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="tom-ford-neroli-portofino">
+  <div class="bottle">
+    <img src="p63-tom-ford-neroli-portofino.webp" alt="Tom Ford Neroli Portofino" loading="lazy">
+  </div>
+  <h3>Tom Ford Neroli Portofino</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Tom Ford</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Tom Ford Neroli Portofino', {50:100,100:150})">Ajouter au panier</button>
+</article>
+</div>
+</section>
+
+<!-- ROJA -->
+<section class="sec" id="roja">
+<div class="sec-header">
+  <h2>ROJA</h2>
+</div>
+<div class="grid" id="grid-roja">
+<article class="card" data-name="roja-elysium">
+  <div class="bottle">
+    <img src="p64-roja-elysium.webp" alt="Roja Elysium" loading="lazy">
+  </div>
+  <h3>Roja Elysium</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Roja</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Roja Elysium', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="roja-oceania">
+  <div class="bottle">
+    <img src="p65-roja-oceania.webp" alt="Roja Oceania" loading="lazy">
+  </div>
+  <h3>Roja Oceania</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Roja</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Roja Oceania', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="roja-apex">
+  <div class="bottle">
+    <img src="p66-roja-apex.webp" alt="Roja Apex" loading="lazy">
+  </div>
+  <h3>Roja Apex</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Roja</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Roja Apex', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="roja-oligarch">
+  <div class="bottle">
+    <img src="p67-roja-oligarch.webp" alt="Roja Oligarch" loading="lazy">
+  </div>
+  <h3>Roja Oligarch</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Roja</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Roja Oligarch', {50:100,100:150})">Ajouter au panier</button>
+</article>
+</div>
+</section>
+
+<!-- SOSPIRO -->
+<section class="sec" id="sospiro">
+<div class="sec-header">
+  <h2>SOSPIRO</h2>
+</div>
+<div class="grid" id="grid-sospiro">
+<article class="card" data-name="sospiro-lost-in-paris">
+  <div class="bottle">
+    <img src="p68-sospiro-lost-in-paris.webp" alt="Sospiro Lost in Paris" loading="lazy">
+  </div>
+  <h3>Sospiro Lost in Paris</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Sospiro</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Sospiro Lost in Paris', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="sospiro-vibrato">
+  <div class="bottle">
+    <img src="p69-sospiro-vibrato.webp" alt="Sospiro Vibrato" loading="lazy">
+  </div>
+  <h3>Sospiro Vibrato</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Sospiro</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Sospiro Vibrato', {50:100,100:150})">Ajouter au panier</button>
+</article>
+<article class="card" data-name="sospiro-il-padrino">
+  <div class="bottle">
+    <img src="p70-sospiro-il-padrino.webp" alt="Sospiro Il Padrino" loading="lazy">
+  </div>
+  <h3>Sospiro Il Padrino</h3>
+  <p style="margin:0;color:var(--muted);font-size:14px">Sospiro</p>
+  <label style="margin:0">Taille</label>
+  <select class="perfume-size">
+    <option value="50">50 ml — 100 DH</option>
+    <option value="100">100 ml — 150 DH</option>
+  </select>
+  <button class="btn" onclick="addCardToCart(this, 'Sospiro Il Padrino', {50:100,100:150})">Ajouter au panier</button>
 </article>
 </div>
 </section>
